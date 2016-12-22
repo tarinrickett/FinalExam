@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
 
     @IBOutlet weak var firstNameLabel: UILabel!
@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         interestsLabel.text = Profile.PROFILE.interests
         wwwLabel.text = Profile.PROFILE.www
         captionLabel.text = Profile.PROFILE.caption
+        image.isUserInteractionEnabled = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,8 +36,22 @@ class ViewController: UIViewController {
         interestsLabel.text = Profile.PROFILE.interests
         wwwLabel.text = Profile.PROFILE.www
         captionLabel.text = Profile.PROFILE.caption
+        image.isUserInteractionEnabled = true
     }
-
+    
+    @IBAction func choosePhoto(_ sender: AnyObject) {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let photo = info[UIImagePickerControllerOriginalImage] as! UIImage
+        image.image = photo
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
