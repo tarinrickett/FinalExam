@@ -14,9 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Profile.PROFILE.firstName = "Tarin"
+        Profile.PROFILE.lastName = "Rickett"
+        Profile.PROFILE.interests = "Camping, hip hop, making apps"
+        Profile.PROFILE.www = "www.tarinrickett.com"
+        Profile.PROFILE.caption = "This is my favorite picture of all time"
         return true
     }
 

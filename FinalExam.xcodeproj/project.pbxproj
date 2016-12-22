@@ -13,6 +13,7 @@
 		8DF7F0571E0C35C2003FBE19 /* FinalExam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DF7F0551E0C35C2003FBE19 /* FinalExam.xcdatamodeld */; };
 		8DF7F0591E0C35C2003FBE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF7F0581E0C35C2003FBE19 /* Assets.xcassets */; };
 		8DF7F05C1E0C35C2003FBE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF7F05A1E0C35C2003FBE19 /* LaunchScreen.storyboard */; };
+		8DF7F0641E0C381B003FBE19 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF7F0631E0C381B003FBE19 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8DF7F0581E0C35C2003FBE19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DF7F05B1E0C35C2003FBE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DF7F05D1E0C35C2003FBE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF7F0631E0C381B003FBE19 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8DF7F04E1E0C35C2003FBE19 /* AppDelegate.swift */,
 				8DF7F0501E0C35C2003FBE19 /* ViewController.swift */,
 				8DF7F0521E0C35C2003FBE19 /* Main.storyboard */,
+				8DF7F0631E0C381B003FBE19 /* Profile.swift */,
 				8DF7F0581E0C35C2003FBE19 /* Assets.xcassets */,
 				8DF7F05A1E0C35C2003FBE19 /* LaunchScreen.storyboard */,
 				8DF7F05D1E0C35C2003FBE19 /* Info.plist */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DF7F0571E0C35C2003FBE19 /* FinalExam.xcdatamodeld in Sources */,
+				8DF7F0641E0C381B003FBE19 /* Profile.swift in Sources */,
 				8DF7F0511E0C35C2003FBE19 /* ViewController.swift in Sources */,
 				8DF7F04F1E0C35C2003FBE19 /* AppDelegate.swift in Sources */,
 			);
