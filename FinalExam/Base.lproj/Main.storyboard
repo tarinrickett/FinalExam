@@ -66,6 +66,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="747" verticalCompressionResistancePriority="747" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ss-g0-WSR">
                                                 <state key="normal" title="Visit"/>
+                                                <connections>
+                                                    <segue destination="6Pc-Pk-zYr" kind="show" id="4dx-6f-lt3"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="200" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQg-8P-gap">
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -216,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1892" y="-108.39580209895054"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="Rqu-vo-xcY">
             <objects>
-                <viewController id="6Pc-Pk-zYr" sceneMemberID="viewController">
+                <viewController id="6Pc-Pk-zYr" customClass="WebViewController" customModule="FinalExam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8IF-Zp-Z2o"/>
                         <viewControllerLayoutGuide type="bottom" id="tLE-KD-626"/>
@@ -227,8 +230,22 @@
                     <view key="view" contentMode="scaleToFill" id="Yek-W2-mpm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L07-pD-CXo">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L07-pD-CXo" firstAttribute="leading" secondItem="Yek-W2-mpm" secondAttribute="leading" constant="8" id="G4s-ie-aUu"/>
+                            <constraint firstAttribute="trailing" secondItem="L07-pD-CXo" secondAttribute="trailing" constant="8" id="P6Y-i9-jRC"/>
+                            <constraint firstItem="L07-pD-CXo" firstAttribute="top" secondItem="8IF-Zp-Z2o" secondAttribute="bottom" id="TzE-y5-wc1"/>
+                            <constraint firstItem="tLE-KD-626" firstAttribute="top" secondItem="L07-pD-CXo" secondAttribute="bottom" id="x6u-D5-nu6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="L07-pD-CXo" id="nJV-hp-Lun"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dlj-DU-2B1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

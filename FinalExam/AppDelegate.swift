@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Profile.PROFILE.firstName = "Tarin"
         Profile.PROFILE.lastName = "Rickett"
         Profile.PROFILE.interests = "Camping, hip hop, making apps"
-        Profile.PROFILE.www = "www.tarinrickett.com"
+        Profile.PROFILE.www = "http://tarinrickett.com/"
         Profile.PROFILE.caption = "This is my favorite picture of all time"
         return true
     }

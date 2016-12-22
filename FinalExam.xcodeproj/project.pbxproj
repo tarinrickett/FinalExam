@@ -19,6 +19,7 @@
 		8DF7F06C1E0C4713003FBE19 /* TapUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF7F06B1E0C4713003FBE19 /* TapUIImageView.swift */; };
 		8DF7F06F1E0C4889003FBE19 /* dogs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DF7F06D1E0C4889003FBE19 /* dogs.jpg */; };
 		8DF7F0701E0C4889003FBE19 /* vcd.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DF7F06E1E0C4889003FBE19 /* vcd.png */; };
+		8DF7F0721E0C4FB5003FBE19 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF7F0711E0C4FB5003FBE19 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8DF7F06B1E0C4713003FBE19 /* TapUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapUIImageView.swift; sourceTree = "<group>"; };
 		8DF7F06D1E0C4889003FBE19 /* dogs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dogs.jpg; path = FinalExam/dogs.jpg; sourceTree = "<group>"; };
 		8DF7F06E1E0C4889003FBE19 /* vcd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vcd.png; path = FinalExam/vcd.png; sourceTree = "<group>"; };
+		8DF7F0711E0C4FB5003FBE19 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				8DF7F04E1E0C35C2003FBE19 /* AppDelegate.swift */,
 				8DF7F0501E0C35C2003FBE19 /* ViewController.swift */,
 				8DF7F0691E0C40B0003FBE19 /* EditViewController.swift */,
+				8DF7F0711E0C4FB5003FBE19 /* WebViewController.swift */,
 				8DF7F0521E0C35C2003FBE19 /* Main.storyboard */,
 				8DF7F0631E0C381B003FBE19 /* Profile.swift */,
 				8DF7F0581E0C35C2003FBE19 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 				8DF7F0571E0C35C2003FBE19 /* FinalExam.xcdatamodeld in Sources */,
 				8DF7F0641E0C381B003FBE19 /* Profile.swift in Sources */,
 				8DF7F0511E0C35C2003FBE19 /* ViewController.swift in Sources */,
+				8DF7F0721E0C4FB5003FBE19 /* WebViewController.swift in Sources */,
 				8DF7F06C1E0C4713003FBE19 /* TapUIImageView.swift in Sources */,
 				8DF7F04F1E0C35C2003FBE19 /* AppDelegate.swift in Sources */,
 			);
